@@ -12,34 +12,54 @@ class HistoriaUsuario extends StatelessWidget {
     this.urlImagen,
   });
 
-
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          width: 60,
-          height: 60,
-          padding: EdgeInsets.all(4),
-          decoration: BoxDecoration(
-            color: Colors.grey[200],
-            shape: BoxShape.circle,
+    return SizedBox(
+      width: 80,
+      child: Column(
+        children: [
+          Container(
+            width: 70,
+            height: 70,
+            padding: const EdgeInsets.all(3),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: color, width: 3),
+            ),
+            child: ClipOval(
+              child: urlImagen != null
+                  ? Image.network(
+                      urlImagen!,
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) => _inicial(),
+                    )
+                  : _inicial(),
+            ),
           ),
-          child: ClipOval(
-            child: urlImagen != null 
-              ? Image.network(urlImagen!, fit: BoxFit.fill)
-              : Center(child: Text("A", style: TextStyle(color: Colors.black))),
+          const SizedBox(height: 4),
+          Text(
+            titulo,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
+              color: Colors.grey,
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-        ),
-        Text(
-          titulo,
-          style: TextStyle(
-            color: Colors.grey,
-            fontSize: 12,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ],
+        ],
+      ),
+    );
+  }
+
+  Widget _inicial() {
+    return Container(
+      color: Colors.grey[300],
+      alignment: Alignment.center,
+      child: Text(
+        titulo.isNotEmpty ? titulo[0].toUpperCase() : '?',
+        style: const TextStyle(color: Colors.black, fontSize: 24),
+      ),
     );
   }
 }
