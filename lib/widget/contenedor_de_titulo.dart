@@ -4,25 +4,16 @@ import 'package:prueba_poo/widget/historia_usuario.dart';
 class ContenedorDeTitulo extends StatelessWidget {
   final Color color;
 
-  const ContenedorDeTitulo({
-    super.key,
-    required this.color,
-  });
-
+  const ContenedorDeTitulo({super.key, required this.color});
   static const List<Map<String, String>> historias = [
-    {
-      'nombre': 'camila',
-      'foto':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReI-vtE0f8CEynSImBO8CPsjJhKhfH-AYJX9YBmQ2py3yfqgTG1aOm8GX6&s=10',
-    },
-    {'nombre': 'hola chicos'},
-    {'nombre': 'diani.11', 'foto': 'https://picsum.photos/seed/diani/200'},
-    {'nombre': 'natinatt11', 'foto': 'https://picsum.photos/seed/natinatt/200'},
-    {'nombre': 'nana_ram', 'foto': 'https://picsum.photos/seed/nana/200'},
-    {'nombre': 'santoto_st', 'foto': 'https://picsum.photos/seed/santoto/200'},
-    {'nombre': 'nico.d02', 'foto': 'https://picsum.photos/seed/nico/200'},
+    {'nombre': '_elkinr_07', 'foto': 'https://i.imgur.com/LQN5oyx.jpeg'},
+    {'nombre': '_isisb3lla', 'foto': 'https://i.imgur.com/jrVo8hN.jpeg'},
+    {'nombre': 'dary.mon.mnz', 'foto': 'https://i.imgur.com/VYD4eX7.jpeg'},
+    {'nombre': 'stiven.cano_0', 'foto': 'https://i.imgur.com/z4bKtr5.jpeg'},
+    {'nombre': 'its_juanita', 'foto': 'https://i.imgur.com/ShUgT3G.jpeg'},
+    {'nombre': 'michel._.jaramillo', 'foto': 'https://i.imgur.com/92JDXDP.jpeg'},
+    {'nombre': 'valeriaortiz4708', 'foto': 'https://i.imgur.com/iGLjVyR.jpeg'},
   ];
-
   @override
   Widget build(BuildContext context) {
     return Container(
