@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prueba_poo/widget/imagen_usuario.dart';
 
 class HistoriaUsuario extends StatelessWidget {
   final Color color;
@@ -18,7 +17,27 @@ class HistoriaUsuario extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ImagenUsuario(urlImagen: urlImagen),
+        Container(
+          width: 60,
+          height: 60,
+          padding: EdgeInsets.all(4),
+          decoration: BoxDecoration(
+            color: Colors.grey[200],
+            shape: BoxShape.circle,
+          ),
+          child: ClipOval(
+            child: urlImagen != null 
+              ? Image.network(
+                  urlImagen!,
+                  fit: BoxFit.fill,
+                  errorBuilder: (context, error, stackTrace) => const ColoredBox(
+                    color: Colors.grey,
+                    child: Icon(Icons.person, color: Colors.white),
+                  ),
+                )
+              : Center(child: Text("A", style: TextStyle(color: Colors.black))),
+          ),
+        ),
         Text(
           titulo,
           style: TextStyle(

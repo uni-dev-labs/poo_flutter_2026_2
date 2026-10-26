@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prueba_poo/widget/Historia_usuario.dart';
+import 'package:prueba_poo/widget/historia_usuario.dart';
 
 class ContenedorDeTitulo extends StatelessWidget {
 
@@ -22,17 +22,24 @@ class ContenedorDeTitulo extends StatelessWidget {
         color: color,
       ),
       width: double.infinity,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          HistoriaUsuario(color: color, titulo: 'camila', urlImagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReI-vtE0f8CEynSImBO8CPsjJhKhfH-AYJX9YBmQ2py3yfqgTG1aOm8GX6&s=10'),
-          HistoriaUsuario(color: color, titulo: titulo),
-          HistoriaUsuario(color: color, titulo: titulo),
-          HistoriaUsuario(color: color, titulo: titulo),
-          HistoriaUsuario(color: color, titulo: titulo),
-          HistoriaUsuario(color: color, titulo: titulo),
-        ],
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            HistoriaUsuario(color: color, titulo: 'camila', urlImagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReI-vtE0f8CEynSImBO8CPsjJhKhfH-AYJX9YBmQ2py3yfqgTG1aOm8GX6&s=10'),
+            const SizedBox(width: 12),
+            HistoriaUsuario(color: color, titulo: titulo),
+            const SizedBox(width: 12),
+            HistoriaUsuario(color: color, titulo: titulo),
+            const SizedBox(width: 12),
+            HistoriaUsuario(color: color, titulo: titulo),
+            const SizedBox(width: 12),
+            HistoriaUsuario(color: color, titulo: titulo),
+            const SizedBox(width: 12),
+            HistoriaUsuario(color: color, titulo: titulo),
+          ],
+        ),
       ),
     );
   }
