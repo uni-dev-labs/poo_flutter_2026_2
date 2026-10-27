@@ -60,7 +60,7 @@ class MyHomePage extends StatelessWidget {
       'lugar': 'Tunja, Boyacá',
     },
     {
-      'usuario': 'Carla_San_18',
+      'usuario': 'Carla_arte',
       'avatar': 'https://i.pravatar.cc/150?img=47',
       'imagen': 'https://images.unsplash.com/photo-1512621776951-a57141f2eeb?auto=format&fit=crop&w=900&q=85',
       'tiempo': '8 h',
@@ -141,7 +141,7 @@ class MyHomePage extends StatelessWidget {
       'verificado': true,
     },
     {
-      'usuario': 'memes.u',
+      'usuario': 'memes_del_dia',
       'avatar': 'https://i.pravatar.cc/150?img=60',
       'imagen': 'https://picsum.photos/seed/funny-meme/900/900',
       'tiempo': '2 d',
@@ -150,7 +150,7 @@ class MyHomePage extends StatelessWidget {
       'descripcion': 'Yo: "voy a dormir temprano"\nLas 3 AM: 🙃',
     },
     {
-      'usuario': 'chef.valen',
+      'usuario': 'cocinando_con_ana',
       'avatar': 'https://i.pravatar.cc/150?img=32',
       'imagen': 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85',
       'tiempo': '2 d',
@@ -160,7 +160,7 @@ class MyHomePage extends StatelessWidget {
       'meGusta': true,
     },
     {
-      'usuario': 'techlover_js',
+      'usuario': 'super_exelente',
       'avatar': 'https://i.pravatar.cc/150?img=8',
       'imagen': 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85',
       'tiempo': '3 d',
@@ -170,7 +170,7 @@ class MyHomePage extends StatelessWidget {
       'verificado': true,
     },
     {
-      'usuario': 'sebas.moto',
+      'usuario': 'sebastian-marcias',
       'avatar': 'https://i.pravatar.cc/150?img=57',
       'imagen': 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=85',
       'tiempo': '4 d',
